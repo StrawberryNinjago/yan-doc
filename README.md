@@ -1,5 +1,7 @@
 # yan-doc
 
+## TL;DR
+
 Yan’s agreed documentation standards for presentations, requirements, design documents, procedures and handoffs.
 
 - Start with the reader, intended outcome and narrative flow.
@@ -15,7 +17,7 @@ Yan’s agreed documentation standards for presentations, requirements, design d
 git clone https://github.com/StrawberryNinjago/yan-doc.git
 ```
 
-The reusable instructions are in [`skills/yan-documentation-standards/SKILL.md`](skills/yan-documentation-standards/SKILL.md). Open the downloaded repo in your coding assistant, or attach that file to a conversation, then ask:
+The reusable instructions are in [`skills/yan-documentation-standards/SKILL.md`](skills/yan-documentation-standards/SKILL.md), with supporting guidance in its `references/` folder. Keep the full skill folder together. Open the downloaded repo in your coding assistant, or provide the skill and its referenced files as context, then ask:
 
 > Read `skills/yan-documentation-standards/SKILL.md` and apply it to this document. Show the proposed structure and wording first; do not edit until we align.
 
@@ -29,7 +31,7 @@ From the downloaded repo, run these commands in a macOS/Linux shell. `cp -i` ask
 
 ```sh
 mkdir -p "$HOME/.agents/skills/yan-documentation-standards" "$HOME/.omp/agent/commands"
-cp -i skills/yan-documentation-standards/SKILL.md "$HOME/.agents/skills/yan-documentation-standards/SKILL.md"
+cp -Ri skills/yan-documentation-standards/. "$HOME/.agents/skills/yan-documentation-standards/"
 cp -i commands/yan-doc.md "$HOME/.omp/agent/commands/yan-doc.md"
 ```
 
@@ -52,6 +54,12 @@ git pull --ff-only
 Then repeat the installation commands if using OMP. For a ZIP download, download the latest ZIP again.
 
 Installed copies do not synchronize automatically. To publish an agreed improvement, update this repo’s skill or command file, then commit and push. Keep project-specific facts, tickets, screenshots and secrets outside this repo.
+
+## Latest update
+
+- Added a company-neutral annotated example for explaining technical concepts.
+- Clarified role-based slide wording, matched workflow comparisons and preservation of approved layouts during targeted changes.
+- Updated installation to include the skill’s supporting references.
 
 ## Initial publication
 
